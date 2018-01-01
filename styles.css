@@ -4,10 +4,13 @@ html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
   margin: 0;
   padding: 0;
-	height: 100%;
-	overflow: hidden;
+	height: auto;
+	overflow-: hidden;
 	
 }
+
+/* ie 10+ */
+html, body { -ms-overflow-style: none; }
 .mdl-demo .mdl-layout__header-row {
   padding-left: 40px;
 }
@@ -230,7 +233,7 @@ html, body {
 
 
 .window {
-  position: relative;
+  position: fixed;
     width: 80%;
     background-color: white;
     top: -40000000000px;
@@ -239,6 +242,7 @@ html, body {
     margin-top: auto;
     margin-bottom: auto;
     overflow: auto;
+	height: auto
 }
 
 .windowImg {
@@ -260,7 +264,7 @@ html, body {
     display: inline-block;
     padding-left: 35px;
     padding-right: 35px;
-    padding-bottom: 35px
+    padding-bottom: 95px;
 }
 
 .windowOrderButtonTelegram {
@@ -268,14 +272,12 @@ html, body {
     color: white;
     background-color: #6436f7;
     border: solid #6436f7 9px;
-    border-left: solid #6436f7 26px;
-    border-right: solid #6436f7 27px;
+	
     border-radius: 4px;
     box-shadow: 0 0 10px 0px #6436f7;
-    margin-left: 85%;
     margin-bottom: 0.25%;
-    margin-right: auto;
     position: relative;
+	left: 85%
 }
 
 .windowOrderButtonFrelanchat {
@@ -332,21 +334,22 @@ html, body {
 	height: 40px;
 }
 
- @media (max-width: 767px) {
+ @media (max-width: 768px) {
 	.windowImg {
     background-color: aqua;
     width: 90%;
     height: auto;
     margin-left: 15px;
-    margin-top: 45px;
-    margin-bottom: 35px;
+		margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 25px;
     display: inline-block;
 	
 
     
 	 }
 	 .window {
-    height: auto;
+    height: 97%;
   position: fixed;
     width: 95%;
     background-color: white;
@@ -354,14 +357,18 @@ html, body {
     left: 2.5%;
     z-index: 9999999999999;
     margin-top: -40px;
+		overflow: auto;
+		 overflow-x: hidden;
+		 border-radius: 2px
     
 }
 	 
 	 .windowText {
     display: inline-block;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 35px
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-bottom: 16px;
+		 font-size: 14px;
 }
 	 
 	 .fa {
@@ -373,18 +380,20 @@ html, body {
 	height: 40px;
 }
 	 .windowOrderButtonTelegram {
-    margin-left: 55%;
-    margin-bottom: 0.25%;
-    margin-right: auto;
+		 width: 31%;
+		 margin-bottom: 10px;
 }
 	 
 	 .windowOrderButtonFrelanchat {
-    margin-top: -70%;
-    margin-left: 10%;
-    margin-bottom: %;
-    margin-right: auto;
-		 position: relative;
-		 top:-29px ;
+ width:31%;    
 }
 	 
+
+
+
+
+.windowOrderButtons {
+	position: relative;
+	right: 23%;
 }
+	 }
